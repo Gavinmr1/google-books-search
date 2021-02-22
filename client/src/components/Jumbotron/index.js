@@ -1,21 +1,23 @@
 import React from "react";
-import "./style.css"
 
-
-function Jumbotron() {
-  return (
-    <div className="jumbotron text-center">
-      <h1><span><a className="white" id="jumboHead" href="/">My Virtual Bookshelf</a></span></h1>
-        <div>
-          <a className="white" target="_blank" rel="noopener noreferrer" href="http://developers.google.com/books/">
-            Powered by Google Books
-          </a>
+function Jumbotron ({children}){
+    const background = "./google.jpg"
+    //https://images.unsplash.com/photo-1468779036391-52341f60b55d?ixlib=rb-1.2.1&auto=format&fit=crop&w=2721&q=80
+    return (
+        <div 
+            style={{clear:"both",marginTop:30, 
+                paddingTop: 120, 
+                paddingBottom: 120, 
+                textAlign: "center",
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundImage: "url(" + background + ")"
+                }}
+            className="jumbotron border">
+            {children}
         </div>
-      
-    </div>
-  );
+    )
 }
 
-
-
-export default Jumbotron;
+export default Jumbotron
