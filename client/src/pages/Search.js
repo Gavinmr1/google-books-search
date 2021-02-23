@@ -52,7 +52,7 @@ class Search extends Component {
           <Col size="12">
             <Jumbotron>
               <h1>Google Books Search</h1>
-              <p>Serach for and Save Books of Interest</p>
+              <p>Search for and Save Books of Interest</p>
             </Jumbotron>
           </Col>
         </Row>

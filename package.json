@@ -1,7 +1,7 @@
 {
     "name": "google-books-search",
     "version": "1.0.0",
-    "description": "google books search",
+    "description": "react google books search",
     "main": "server.js",
     "scripts": {
         "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -25,8 +25,6 @@
         "mongoose": "^5.5.0",
         "path": "^0.12.7",
         "react": "^16.8.6",
-        "react-dom": "^17.0.1",
-        "react-router-dom": "^5.0.0",
-        "react-scripts": "^4.0.3"
+        "react-router-dom": "^5.0.0"
     }
 }
